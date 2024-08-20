@@ -1,0 +1,100 @@
+body ,html{
+margin: 0;
+padding: 0;
+height: 100%;
+font-family: 'poppins',sans-serif;
+}
+.background{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking-form{
+   
+     width: 450px;
+     background: transparent;
+    border: 2px solid rgba(255,255, 255, .2);
+    backdrop-filter: blur(7.6px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 5px;
+    padding: 30px 40px;
+}
+.booking-form h2{
+    text-align: center;
+}
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+}
+.booking-form  select{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+}
+.booking-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.booking-form button{
+    margin-top: 10px; 
+    padding: 10px;
+    background-color: #a26a21;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover{
+    background-color: #ba7718;
+}
+.banner{
+    width: 100% ;
+    height: 100vh ;
+    background-image:linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url(Untitled1.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.navbar{
+    width: 96%;
+    margin: auto;
+    padding: .2px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 80px;
+    cursor: pointer;
+
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #a26a21;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
